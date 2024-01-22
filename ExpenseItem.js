@@ -1,7 +1,8 @@
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 import "./ExpenseItem.css";
-function ExpenseItem(props) {
+import Card from "../UI/Card";
+const ExpenseItem=(props)=> {
   //const expenseDate = new Date(2021, 2, 28);
   //const expenseTitle = "Car Insurance";
   //const expenseAmount = 294.67;
@@ -14,11 +15,11 @@ function ExpenseItem(props) {
     //<div>Petrol Rs 100</div>
     //<div>Movies Rs 200</div>
     //</div>
-    <div className="expense-item">
+    <Card className="expense-item">
      <ExpenseDate date={props.date}/>
      <ExpenseDetails  title = {props.title}  amount ={props.amount} location = {props.location}/>
      
-    </div>
+    </Card>
   );
 }
 export default ExpenseItem;
