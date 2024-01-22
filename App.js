@@ -41,11 +41,10 @@ function App() {
         amount={expense.amount}
         date={expense.date}
         location={expense.location}
-      />
+      ></ExpenseItem>
     );
   }
 
   return <div>{expenseItems}</div>;
 }
 export default App;
-
